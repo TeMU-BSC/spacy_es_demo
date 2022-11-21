@@ -16,9 +16,9 @@ st.set_page_config(page_title="Modelos Spacy castellano", header_title="Spacy", 
     'About': None,
 
 }, layout='wide',initial_sidebar_state='auto')
-default_text = "El Fútbol Club Barcelona, conocido popularmente como Barça, es una entidad polideportiva con sede en Barcelona, España. Fue fundado como club de fútbol el 29 de noviembre de 1899 y registrado oficialmente el 5 de enero de 1903."
-st.title("Demo de las cadenas de Spacy 3.4 en castellano")
-st.subheader("*Elegir un modelo en la columna de la derecha*")
+default_text = "El Fútbol Club Barcelona, conocido popularmente como Barça, es una entidad polideportiva con sede en Barcelona, España."
+st.markdown("## Demo de las cadenas de Spacy 3.4 en castellano")
+st.markdown("#### *Elegir un modelo en la columna de la izquierda*")
 visualizers = ["ner", "similarity", "tokens", "parser", "textcat"]
 similarity_texts = ('gato', 'perro')
 spacy_streamlit.visualize(models, default_text, visualizers, similarity_texts=('perro', 'gato'),
