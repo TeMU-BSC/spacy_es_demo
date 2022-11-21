@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 Run demo with
 ```bash
-streamlit run streamlit_app.py --server.port 8081 --theme.font serif --browser.serverPort 8081
+LANG=es streamlit run streamlit_app.py --server.port 8081 --theme.font serif --browser.serverPort 8081
 ```
 
 ## Deploy via docker compose

@@ -62,6 +62,7 @@ validators==0.20.0
 wasabi==0.10.1
 watchdog==2.1.9
 zipp==3.9.0
+https://huggingface.co/PlanTL-GOB-ES/es_bsc_demo_trf/resolve/main/es_bsc_demo_trf-any-py3-none-any.whl
 https://huggingface.co/spacy/es_dep_news_trf/resolve/main/es_dep_news_trf-any-py3-none-any.whl
 https://huggingface.co/spacy/es_core_news_md/resolve/main/es_core_news_md-any-py3-none-any.whl
 git+https://github.com/TeMU-BSC/spacy-streamlit.git
