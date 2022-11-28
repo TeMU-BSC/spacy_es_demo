@@ -8,6 +8,7 @@ Created on Mon May 10 09:16:13 2021
 
 import spacy_streamlit
 import streamlit as st
+from spacy_streamlit.util import Demotype
 
 models = ["es_bsc_demo_trf", "es_core_news_md", "es_dep_news_trf"]  # ,"ca_core_news_lg","ca_core_news_trf"]
 st.set_page_config(page_title="Modelos Spacy castellano", header_title="Spacy", menu_items={
@@ -24,5 +25,6 @@ similarity_texts = ('gato', 'perro')
 spacy_streamlit.visualize(models, default_text, visualizers, similarity_texts=('perro', 'gato'),
                           show_visualizer_select=True, sidebar_title="Visualización modelos Spacy-PlanTL",
                           sidebar_description="Es posible elegir el modelo y la funcionalidad para la demostración",
+                          demo_type=Demotype.PLANTL
                           )
 # streamlit run streamlit_app.py --server.port 8081 --theme.font serif --browser.serverPort 8081 --browser.serverAddress http://aina.bsc.es
