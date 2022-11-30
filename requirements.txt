@@ -66,4 +66,4 @@ https://huggingface.co/PlanTL-GOB-ES/es_bsc_demo_trf/resolve/main/es_bsc_demo_tr
 https://huggingface.co/spacy/es_dep_news_trf/resolve/main/es_dep_news_trf-any-py3-none-any.whl
 https://huggingface.co/spacy/es_core_news_md/resolve/main/es_core_news_md-any-py3-none-any.whl
 git+https://github.com/TeMU-BSC/spacy-streamlit.git
-https://github.com/TeMU-BSC/streamlit/releases/download/1.14.1/streamlit-1.14.1-py2.py3-none-any.whl
+https://github.com/TeMU-BSC/streamlit/releases/download/1.14.1-plantl/streamlit-1.14.1-py2.py3-none-any.whl
