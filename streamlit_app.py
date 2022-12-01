@@ -16,7 +16,7 @@ st.set_page_config(page_title="Modelos Spacy castellano", header_title="Spacy", 
     'Report a bug': 'https://github.com/TeMU-BSC/spacy_es_demo/issues',
     'About': None,
 
-}, layout='wide',initial_sidebar_state='auto')
+}, layout='wide', initial_sidebar_state='auto')
 default_text = "El Fútbol Club Barcelona, conocido popularmente como Barça, es una entidad polideportiva con sede en Barcelona, España."
 st.markdown("## Demo de las cadenas de Spacy 3.4 en castellano")
 st.markdown("#### *Elegir un modelo en la columna de la izquierda*")
@@ -25,6 +25,8 @@ similarity_texts = ('gato', 'perro')
 spacy_streamlit.visualize(models, default_text, visualizers, similarity_texts=('perro', 'gato'),
                           show_visualizer_select=True, sidebar_title="Visualización modelos Spacy-PlanTL",
                           sidebar_description="Es posible elegir el modelo y la funcionalidad para la demostración",
-                          demo_type=Demotype.PLANTL
+                          demo_type=Demotype.PLANTL,
+                          models_download_name_links=[{"name": "es_bsc_demo_trf",
+                                                       "link": "https://huggingface.co/PlanTL-GOB-ES/es_bsc_demo_trf"}]
                           )
 # streamlit run streamlit_app.py --server.port 8081 --theme.font serif --browser.serverPort 8081 --browser.serverAddress http://aina.bsc.es
